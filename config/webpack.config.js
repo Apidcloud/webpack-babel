@@ -24,8 +24,7 @@ let loadersSetup = [
     {
         loader: 'babel-loader',
         options: {
-            plugins: ['transform-regenerator', 'transform-runtime'],
-            //plugins: ['transform-runtime'],
+            plugins: ['transform-runtime'],
             presets: [['es2015', { modules: false }], 'stage-3'],
         }
     }
@@ -54,7 +53,6 @@ const config = {
 
     // Library (or app) entry point (webpack will look for it in the 'src' directory due to the modules setting below).
     entry: [
-        "regenerator-runtime",
         entryFilename
     ],
     // Output the bundled JS to dist/app.js
@@ -80,6 +78,7 @@ const config = {
                 test: /\.jsx?$/,
                 // Skip any files outside of `src` directory
                 include: /src/,
+                exclude: /node_modules/,
                 // loaders depending on target (ES6 or ES5)
                 use: loadersSetup
             }
