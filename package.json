@@ -2,7 +2,7 @@
   "name": "webpack-babel",
   "version": "1.0.0",
   "description": "Webpack and Babel boilerplate",
-  "main": "index.js",
+  "main": "build/dist/webpack-babel.browser.min.js",
   "scripts": {
     "build": "webpack -d --config config/webpack.config.js",
     "build:es6": "cross-env NODE_ENV=es6 npm run build",
@@ -16,6 +16,10 @@
   },
   "author": "Luís Fernandes aka Apidcloud <luisapidcloud@hotmail.com>",
   "license": "MIT",
+  "files": [
+    "build",
+    "README.md"
+  ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -31,5 +35,20 @@
   },
   "dependencies": {
     "babel-runtime": "^6.23.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Apidcloud/webpack-babel.git"
+  },
+  "keywords": [
+    "javascript",
+    "webpack",
+    "babel",
+    "boilerplate",
+    "transform-runtime"
+  ],
+  "bugs": {
+    "url": "https://github.com/Apidcloud/webpack-babel/issues"
+  },
+  "homepage": "https://github.com/Apidcloud/webpack-babel#readme"
 }
