@@ -10,3 +10,6 @@ Build webpack bundle based on **config/webpack.config.js** »
 
 Webpack live server at localhost:8080 »
 `npm run live-server`
+
+HTTP-server at localhost:8080 »
+`npm run start`
