@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack -d --config config/webpack.config.js",
-    "editor-build": "cross-env NODE_ENV=es6 npm run build",
+    "build:es6": "cross-env NODE_ENV=es6 npm run build",
     "deploy": "cross-env NODE_ENV=production webpack -p --config config/webpack.config.js",
-    "build:all": "rimraf build && npm run build && npm run editor-build && npm run deploy",
+    "build:all": "rimraf build && npm run build && npm run build:es6 && npm run deploy",
     "live-server": "webpack-dev-server -d --port 8080 --progress --colors --hot --config config/webpack.config.js",
-    "editor-live-server": "cross-env NODE_ENV=es6 npm run live-server",
-    "deploy-live-server": "cross-env NODE_ENV=production npm run live-server",
+    "live-server:es6": "cross-env NODE_ENV=es6 npm run live-server",
+    "live-server:deploy": "cross-env NODE_ENV=production npm run live-server",
     "watch": "npm run build -- -w",
     "start": "http-server -a localhost -p 8080 -c-1"
   },

@@ -33,7 +33,7 @@ let loadersSetup = [
 // if transpiling to ES6
 if (TO_ES6) {
     // remove babel loader that would otherwise transpile to ES5
-    loadersSetup.shift();
+    loadersSetup = [];
     // update output path
     relativeOutputPath = 'build/build-es6';
     // update package name

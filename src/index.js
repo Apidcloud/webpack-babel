@@ -1,4 +1,5 @@
-export * from './core';
+export * from 'core';
+export * from 'extensions';
 
 export let XPTO = Symbol('werewrew');
 
