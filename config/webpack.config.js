@@ -60,9 +60,10 @@ const config = {
         filename: finalPackageName,
         path: path.resolve(relativeOutputPath),
         // export itself to a global var
-        libraryTarget: "var",
+        libraryTarget: "umd",
         // name of the global var
         library: globalLibraryName,
+        umdNamedDefine: true,
         // webpack dev server hot reload path
         publicPath: relativeOutputPath
     },
