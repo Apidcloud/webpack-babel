@@ -87,7 +87,9 @@ const config = {
     },
     plugins: [
         // Set up the notifier plugin - you can remove this (or set alwaysNotify false) if desired
-        new WebpackNotifierPlugin({alwaysNotify: true})
+        new WebpackNotifierPlugin({alwaysNotify: true}),
+        // scope hoisting plugin
+        new webpack.optimize.ModuleConcatenationPlugin()
     ]
 };
 
