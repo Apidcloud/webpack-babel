@@ -53,7 +53,7 @@ const config = {
 
     // Library (or app) entry point (webpack will look for it in the 'src' directory due to the modules setting below).
     entry: [
-        entryFilename
+        "index.js"
     ],
     // Output the bundled JS to dist/app.js
     output: {

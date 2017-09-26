@@ -1,6 +1,9 @@
+const mime = require('mime');
+
 export default class Snake {
     constructor(name) {
-        
+        console.log(mime.getType('txt'));
+        console.log(mime.getExtension('text/plain')); 
     }
 
     async move(meters) {
